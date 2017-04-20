@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title></title>
+    <!--    favicon-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/datepicker.min.css">
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#">Моя лента<span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">Интересы</a></li>
+                                <li><a href="#">Направления</a></li>
+                                <li><a href="#">Подбор тура</a></li>
+                                <li><a href="#">Заявка</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-2 col-lg-20 col-md-22 col-sm-24">
+                    <h1>Настройки интересов</h1>
+                    <section class="selections">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#selection-1" aria-controls="selection-1" role="tab" data-toggle="tab">ПОДБОРКА №1</a></li>
+                            <li><a href="#" class="add-selection">ДОБАВИТЬ ПОДБОРКУ</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="selection-1">
+                                <form action="#" id="form-1" class="clearfix">
+                                    <div class="col-lg-7 col-md-8 col-sm-12">
+                                        <label for="#">Название подборки</label>
+                                        <input type="text" class="selection-name" name="selection-name" placeholder="Введите название" value="ПОДБОРКА №1">
+                                    </div>
+                                    <div class="col-lg-7 col-md-8 col-sm-12">
+                                        <label for="#">Ваш город</label>
+                                        <input type="text" class="selection-city" name="selection-city" id="autocomplete-cities-1">
+                                        <button type="button" class="city-reset icon-cancel"></button>
+                                    </div>
+                                    <div class="col-lg-offset-2 col-md-8 col-sm-24 wrap-submit">
+                                        <button type="submit" class="icon-right-1">СМОТРЕТЬ РЕЗУЛЬТАТЫ</button>
+                                    </div>
+                                    <div class="col-sm-24 region-country">
+                                        <div class="title-region-country">Вы можете задать несколько стран или регионов для одной подборки</div>
+                                        <div class="wrap-buttons">
+                                            <div class="button-ul button-ul-region">
+                                                <button type="button" class="add-region-country">ДОБАВИТЬ РЕГИОН</button>
+                                                <div class="add-ul-button">
+                                                    <div class="wrap-ul-add">
+                                                        <ul>
+                                                            <li>
+                                                                <label>region1
+                                                                    <input type="radio" name="region" value="region1">
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label>region2
+                                                                    <input type="radio" name="region" value="region2">
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label>region3
+                                                                    <input type="radio" name="region" value="region3">
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label>region4
+                                                                    <input type="radio" name="region" value="region4">
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label>region5
+                                                                    <input type="radio" name="region" value="region5">
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label>region6
+                                                                    <input type="radio" name="region" value="region6">
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label>region7
+                                                                    <input type="radio" name="region" value="region7">
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label>region8
+                                                                    <input type="radio" name="region" value="region8">
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label>region9
+                                                                    <input type="radio" name="region" value="region9">
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label>region10
+                                                                    <input type="radio" name="region" value="region10">
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <button type="button" class="add-item">ДОБАВИТЬ</button>
+                                                </div>
+                                            </div>
+                                            <div class="button-ul button-ul-country">
+                                                <button type="button" class="add-region-country button-disabled">ДОБАВИТЬ СТРАНЫ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <section class="without-padding col-sm-24 clearfix">
+                                        <div class="col-lg-7 col-md-8 col-sm-12">
+                                            <label for="#">Даты вылета</label>
+                                            <input type="text" data-range="true" data-multiple-dates-separator=" - " data-date-format="d MM, D" class="datepicker-here" name="departure-date" placeholder="Введите даты вылета" autocomplete="off" readonly>
+                                        </div>
+                                        <div class="col-lg-4 col-md-8 col-sm-12">
+                                            <label for="#">На сколько</label>
+                                            <input class="inp-how-many-night toggle-popup" name="inp-how-many-night" type="text" placeholder="Сколько ночей" readonly>
+                                            <div class="pop-up-filter how-many-night">
+                                                <div class="elem-romb"></div>
+                                                <div>
+                                                    <span> от </span>
+                                                    <div class="wrap-select icon-down-open">
+                                                        <select name="from-date" class="from-date">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7" selected>7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
+                                                            <option value="10">10</option>
+                                                            <option value="11">11</option>
+                                                            <option value="12">12</option>
+                                                            <option value="13">13</option>
+                                                            <option value="14">14</option>
+                                                            <option value="15">15</option>
+                                                            <option value="16">16</option>
+                                                            <option value="17">17</option>
+                                                            <option value="18">18</option>
+                                                            <option value="19">19</option>
+                                                            <option value="20">20</option>
+                                                            <option value="21">21</option>
+                                                            <option value="22">22</option>
+                                                            <option value="23">23</option>
+                                                            <option value="24">24</option>
+                                                            <option value="25">25</option>
+                                                            <option value="26">26</option>
+                                                            <option value="27">27</option>
+                                                            <option value="28">28</option>
+                                                            <option value="29">29</option>
+                                                            <option value="30">30</option>
+                                                        </select>
+                                                    </div>
+                                                    <span> ночей </span>
+                                                </div>
+                                                <div>
+                                                    <span> до </span>
+                                                    <div class="wrap-select icon-down-open">
+                                                        <select name="to-date" class="to-date">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
+                                                            <option value="10">10</option>
+                                                            <option value="11">11</option>
+                                                            <option value="12">12</option>
+                                                            <option value="13">13</option>
+                                                            <option value="14" selected>14</option>
+                                                            <option value="15">15</option>
+                                                            <option value="16">16</option>
+                                                            <option value="17">17</option>
+                                                            <option value="18">18</option>
+                                                            <option value="19">19</option>
+                                                            <option value="20">20</option>
+                                                            <option value="21">21</option>
+                                                            <option value="22">22</option>
+                                                            <option value="23">23</option>
+                                                            <option value="24">24</option>
+                                                            <option value="25">25</option>
+                                                            <option value="26">26</option>
+                                                            <option value="27">27</option>
+                                                            <option value="28">28</option>
+                                                            <option value="29">29</option>
+                                                            <option value="30">30</option>
+                                                        </select>
+                                                    </div>
+                                                    <span> ночей </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-8 col-sm-12">
+                                            <label for="#">Количество гостей</label>
+                                            <input class="inp-how-many-people toggle-popup" name="inp-how-many-people" type="text" placeholder="Сколько гостей" readonly>
+                                            <div class="pop-up-filter how-many-people">
+                                                <div class="elem-romb"></div>
+                                                <div>
+                                                    <div class="wrap-select icon-down-open">
+                                                        <select name="adult" class="adult">
+                                                            <option value="1">1</option>
+                                                            <option value="2" selected>2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
+                                                            <option value="10">10</option>
+                                                        </select>
+                                                    </div>
+                                                    <span> взрослых </span>
+                                                </div>
+                                                <div>
+                                                    <div class="wrap-select icon-down-open">
+                                                        <select name="children" class="children">
+                                                           <option value="0">0</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2" selected>2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
+                                                            <option value="10">10</option>
+                                                        </select>
+                                                    </div>
+                                                    <span> детей </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-8 col-sm-12">
+                                            <label for="#">Стоимость тура</label>
+                                            <input class="inp-how-many-money toggle-popup" name="inp-how-many-money" type="text" placeholder="Какова стоимость" readonly>
+                                            <div class="pop-up-filter how-many-money">
+                                                <div class="elem-romb"></div>
+                                                <div>
+                                                    <span>от</span>
+                                                    <div class="wrap-select icon-down-open">
+                                                        <select name="from-rub" class="from-rub">
+                                                            <option value="10 000">10 000</option>
+                                                            <option value="20 000">20 000</option>
+                                                            <option value="30 000">30 000</option>
+                                                            <option value="40 000">40 000</option>
+                                                            <option value="50 000" selected>50 000</option>
+                                                            <option value="60 000">60 000</option>
+                                                            <option value="70 000">70 000</option>
+                                                            <option value="80 000">80 000</option>
+                                                            <option value="90 000">90 000</option>
+                                                            <option value="100 000">100 000</option>
+                                                        </select>
+                                                    </div>
+                                                    <span> рублей </span>
+                                                </div>
+                                                <div>
+                                                    <span>до</span>
+                                                    <div class="wrap-select icon-down-open">
+                                                        <select name="to-rub" class="to-rub">
+                                                           <option value="10 000">10 000</option>
+                                                           <option value="20 000">20 000</option>
+                                                           <option value="30 000">30 000</option>
+                                                           <option value="40 000">40 000</option>
+                                                           <option value="50 000">50 000</option>
+                                                           <option value="60 000">60 000</option>
+                                                           <option value="70 000">70 000</option>
+                                                           <option value="80 000">80 000</option>
+                                                           <option value="90 000">90 000</option>
+                                                           <option value="100 000">100 000</option>
+                                                           <option value="110 000">110 000</option>
+                                                           <option value="120 000">120 000</option>
+                                                           <option value="130 000">130 000</option>
+                                                           <option value="140 000">140 000</option>
+                                                           <option value="150 000" selected>150 000</option>
+                                                           <option value="160 000">160 000</option>
+                                                           <option value="170 000">170 000</option>
+                                                           <option value="180 000">180 000</option>
+                                                           <option value="190 000">190 000</option>
+                                                           <option value="200 000">200 000</option>
+                                                        </select>
+                                                    </div>
+                                                    <span> рублей </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 col-md-8 col-sm-12">
+                                            <label for="">Категория отелей от</label>
+                                            <div class="block-star">
+                                                <label for="" class="icon-star active-star"><input type="radio" name="star" value="1"></label>
+                                                <label for="" class="icon-star active-star"><input type="radio" name="star" value="2"></label>
+                                                <label for="" class="icon-star active-star"><input type="radio" name="star" value="3"></label>
+                                                <label for="" class="icon-star active-star"><input type="radio" name="star" value="4" checked></label>
+                                                <label for="" class="icon-star"><input type="radio" name="star" value="5"></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-8 col-sm-12">
+                                            <label for="#">Рейтинг TopHotels</label>
+                                            <div class="block-rating toggle-popup">
+                                                <span>Не ниже</span>
+                                                <input type="text" class="inp-how-many-rating" name="rating" readonly>
+                                            </div>
+                                            <div class="pop-up-filter how-many-rating">
+                                                <div class="elem-romb"></div>
+                                                <span>Рейтинг</span>
+                                                <div class="wrap-select icon-down-open">
+                                                    <select name="rating-select" class="rating-select">
+                                                        <option value="1.0">1.0</option>
+                                                        <option value="1.5">1.5</option>
+                                                        <option value="2.0">2.0</option>
+                                                        <option value="2.5">2.5</option>
+                                                        <option value="3.0">3.0</option>
+                                                        <option value="3.5">3.5</option>
+                                                        <option value="4.0" selected>4.0</option>
+                                                        <option value="4.5">4.5</option>
+                                                        <option value="5.0">5.0</option>
+                                                        <option value="5.5">5.5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-8 col-sm-12">
+                                            <label for="#">Тип питания</label>
+                                            <input class="inp-type-food toggle-popup" name="inp-type-food" type="text" placeholder="Тип питания" readonly>
+                                            <div class="pop-up-filter type-food">
+                                                <div class="elem-romb"></div>
+                                                <div class="wrap-select icon-down-open">
+                                                    <select name="select-type-food" class="select-type-food">
+                                                        <option value="любой" selected>любой</option>
+                                                        <option value="2-х разовый">2-х разовый</option>
+                                                        <option value="3-х разовый">3-х разовый</option>
+                                                        <option value="4-х разовый">4-х разовый</option>
+                                                        <option value="5-х разовый">5-х разовый</option>
+                                                    </select>
+                                                </div>
+                                                <span>тип</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-8 col-sm-12">
+                                            <label for="#">Расположение</label>
+                                            <input class="inp-location-hotel toggle-popup" name="inp-location-hotel" type="text" placeholder="Расположение" readonly>
+                                            <div class="pop-up-filter location-hotel">
+                                                <div class="elem-romb"></div>
+                                                <div class="wrap-select icon-down-open">
+                                                    <select name="select-location-hotel" class="select-location-hotel">
+                                                        <option value="Пляжные, 1-я линия" selected>Пляжные, 1-я линия</option>
+                                                        <option value="Пляжные, 2-я линия">Пляжные, 2-я линия</option>
+                                                        <option value="Пляжные, 3-я линия">Пляжные, 3-я линия</option>
+                                                        <option value="Центр города">Центр города</option>
+                                                        <option value="Любое">Любое</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-8 col-sm-24">
+                                            <button type="button" class="del-selection"><span>Удалить подборку</span></button>
+                                        </div>
+                                    </section>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 address">
+                    <h3>Туристический проект</h3>
+                    <div>Москва, 1-й Щипковский переулок, д.1</div>
+                    <a class="a-modal" href="#" data-toggle="modal" data-target="#address-modal">Показать на карте</a>
+
+                    <div class="modal fade" id="address-modal" tabindex="-1" role="dialog" aria-labelledby="address-modal">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26935.570525738345!2d37.618245168322844!3d55.72084903477015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b1796dc7ea1%3A0xb71fd7a619ad685e!2zMS3QuSDQqdC40L_QutC-0LLRgdC60LjQuSDQv9C10YAuLCDQnNC-0YHQutCy0LAsIDExNTA5Mw!5e0!3m2!1sru!2sru!4v1492674686618" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-lg-offset-2 col-md-7 col-md-offset-1 col-sm-9 col-xs-12 working-hours">
+                    <div>Время работы офиса:</div>
+                    <div>Будни 10:00 &#8212 21:00 </div>
+                    <div>Выходные и праздники 11:00 &#8212 17:00</div>
+                </div>
+                <div class="col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-4 col-xs-12 feedback">
+                    <a href="tel:+7 495 585 55 55">+7 495 585 55 55</a>
+                    <!-- Button trigger modal -->
+                    <div class="feedback-modal-block">
+                        <a class="a-modal" href="#" data-toggle="modal" data-target="#feedback-modal">Обратная связь</a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="feedback-modal" tabindex="-1" role="dialog" aria-labelledby="feedback-modal">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="feedbackInputName">Ваше имя</label>
+                                                <input type="text" class="form-control" id="feedbackInputName" placeholder="Укажите ваше имя">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="feedbackInputEmail1">Ваш email</label>
+                                                <input type="email" class="form-control" id="feedbackInputEmail1" placeholder="Укажите ваш email">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Ваше сообщение</label>
+                                                <textarea class="form-control" rows="3"></textarea>
+                                            </div>
+                                            <button type="submit" class="btn btn-default btn-lg btn-block">Отправить</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-lg-offset-2 col-md-3 col-md-offset-1 col-sm-4 col-xs-12 soc-block">
+                    <div><a href="#">ВКонтакте</a></div>
+                    <div><a href="#">Facebook</a></div>
+                    <div><a href="#">Instagram</a></div>
+                    <div><a href="#">Одноклассники</a></div>
+                </div>
+                <div class="col-sm-24 col-xs-24 copy">
+                    Разработано командой TourAdmin &copy 2017
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
